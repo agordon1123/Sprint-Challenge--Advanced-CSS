@@ -3,7 +3,9 @@
 .home {
 
   .intro {
-
+    img {
+      border-radius: 5px;
+    }
     h2 {
       padding: 15px;
     }
@@ -11,7 +13,6 @@
     p {
       padding:0 15px;
     }
-  
   }
 
   .space-images {
@@ -58,6 +59,16 @@
       }
 
       .btn {
+        .signup-button(white, #22283A);
+        text-align: center;
+        font-size: 1.8rem;
+        height: 35px;
+        width: 100px;
+        padding-top: 10px;
+        border-radius: 5px;
+        &:hover {
+          .signup-button(#22283A, white);
+        }
       }
     }
 
