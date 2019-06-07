@@ -6,11 +6,13 @@ nav {
     margin: 0 auto;
     background: @wild-sand;
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
+    .flex-wrap();
     justify-content: center;
     align-items: center;
     border: 1px double @sea-shell;
+    @media (@phone) {
+        width: 100%;
+      }
     h1 {
         font-size: 4rem;
         width: 100%;
@@ -21,5 +23,8 @@ nav {
         color: black;
         text-decoration: none;
         margin: 0 18px 5px 18px;
+        @media (@phone) {
+            margin: 0 auto;
+        }
     }
 }
